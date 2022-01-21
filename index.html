@@ -15,31 +15,37 @@
   <body class="bg-mobile bg-myRed">
     <div id="app">
       <main
-        class="flex flex-wrap justify-center items-center text-base font-poppins pt-24 pb-12 px-8"
+        class="flex flex-wrap justify-center items-center text-base font-poppins pt-24 pb-12 px-8 lg:flex-nowrap lg:gap-16 lg:justify-between lg:px-32 lg:py-24"
       >
-        <section>
-          <h1 class="text-2xl text-white text-center font-bold">
+        <section class="lg:basis-1/2">
+          <h1
+            class="text-2xl text-white text-center font-bold lg:text-6xl lg:leading-tight lg:text-left"
+          >
             Learn to code by watching others
           </h1>
           <p
-            class="text-gray-200 text-center my-6 font-medium text-sm px-4 leading-6"
+            class="text-gray-200 text-center my-6 font-medium text-sm px-4 leading-6 lg:text-left lg:text-lg lg:px-0 lg:mt-10"
           >
             See how experienced developers solve problems in real-time. Watching
             scripted tutorials is great, but understanding how developers think
             is invaluable.
           </p>
         </section>
-        <section>
+        <section class="lg:basis-1/2">
           <div
-            class="w-full bg-myBlue rounded-md py-4 mt-10 mb-6 drop-shadow-lg"
+            class="w-full bg-myBlue rounded-md py-4 mt-10 mb-6 drop-shadow-lg shadow-lg"
           >
-            <p class="text-myGrayishBlue text-center">
-              <span class="text-white font-bold">Try it free 7 days</span> then
-              <br />
+            <p class="text-myGrayishBlue text-center lg:py-1">
+              <span class="text-white font-semibold">Try it free 7 days</span>
+              then
+              <br class="lg:hidden" />
               $20/mo. thereafter
             </p>
           </div>
-          <form action="" class="bg-white rounded-md p-6">
+          <form
+            action=""
+            class="bg-white rounded-md p-6 drop-shadow-lg shadow-lg"
+          >
             <input
               type="text"
               name="first"
@@ -87,7 +93,8 @@
               Claim your free trial
             </button>
             <p class="text-center text-[10px] leading-5 text-myGrayishBlue">
-              By clicking the button, you are agreeing to <br />our
+              By clicking the button, you are agreeing to
+              <br class="lg:hidden" />our
               <span class="text-myRed font-bold">Terms and Services</span>
             </p>
           </form>
