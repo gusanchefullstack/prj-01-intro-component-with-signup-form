@@ -42,53 +42,70 @@
               $20/mo. thereafter
             </p>
           </div>
-          <form
-            action=""
-            class="bg-white rounded-md p-6 drop-shadow-lg shadow-lg"
-          >
-            <input
-              type="text"
-              name="first"
-              id="first"
-              placeholder="First Name"
-              class="form-input"
-            />
-            <label for="first" class="invisible"
-              >First name cannot be empty</label
-            >
-            <input
-              type="text"
-              name="last"
-              id="last"
-              placeholder="Last Name"
-              class="form-input"
-            />
-            <label for="last" class="invisible"
-              >Last name cannot be empty</label
-            >
-            <input
-              type="mail"
-              name="mail"
-              id="mail"
-              placeholder="Email Address"
-              class="form-input"
-            />
-            <label for="mail" class="invisible"
-              >Looks like this is not an email</label
-            >
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
-              class="form-input"
-            />
-            <label for="password" class="invisible"
-              >Password cannot be empty</label
-            >
+          <form class="bg-white rounded-md p-6 drop-shadow-lg shadow-lg">
+            <div class="flex flex-wrap justify-end">
+              <input
+                type="text"
+                name="first"
+                id="first"
+                placeholder="First Name"
+                required
+                class="form-input required peer"
+              />
+              <label
+                for="first"
+                class="invisible peer-required:visible peer-valid:invisible peer-required:py-2 text-myRed italic text-xs text-right"
+                >First name cannot be empty</label
+              >
+            </div>
+            <div class="flex flex-wrap justify-end">
+              <input
+                type="text"
+                name="last"
+                id="last"
+                placeholder="Last Name"
+                required
+                class="form-input required peer"
+              />
+              <label
+                for="last"
+                class="invisible peer-required:visible peer-valid:invisible peer-required:py-2 text-myRed italic text-xs text-right"
+                >Last name cannot be empty</label
+              >
+            </div>
+            <div class="flex flex-wrap justify-end">
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="Email Address"
+                class="form-input peer invalid:outline-myRed"
+              />
+              <label
+                for="mail"
+                class="invisible peer-invalid:visible text-myRed italic text-xs text-right peer-invalid:py-2"
+                >Looks like this is not an email</label
+              >
+            </div>
+            <div class="flex flex-wrap justify-end">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+                class="form-input peer required"
+              />
+              <label
+                for="password"
+                class="invisible peer-required:visible peer-valid:invisible text-myRed italic text-xs text-right peer-invalid:py-2"
+                >Password cannot be empty</label
+              >
+            </div>
             <button
               type="submit"
-              class="bg-myGreen w-full py-4 uppercase text-white rounded-md border-b-4 border-b-green-500 mb-2"
+              id="submit-button"
+              class="mt-4 bg-myGreen w-full py-4 uppercase text-white rounded-md border-b-4 border-b-green-500 mb-2 focus:outline-2 focus:outline-myGreen hover:opacity-80"
             >
               Claim your free trial
             </button>
