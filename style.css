@@ -7,7 +7,7 @@
     @apply w-11/12 placeholder:text-sm placeholder:text-gray-500 placeholder:font-bold  px-4 py-3 my-0 text-sm font-semibold border-none focus:outline-none;
   }
   .input-container {
-    @apply flex flex-nowrap justify-between items-center border-gray-300 border rounded-md w-full focus:outline-1 focus:outline-gray-500 py-1 px-2;
+    @apply flex flex-nowrap justify-between items-center border border-gray-300  rounded-md w-full py-1 px-2;
   }
   .label-format {
     @apply block text-myRed italic text-xs text-right py-1;

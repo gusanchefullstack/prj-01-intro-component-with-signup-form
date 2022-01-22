@@ -47,7 +47,7 @@
             </p>
           </div>
           <form class="bg-white rounded-md p-6 drop-shadow-lg shadow-lg">
-            <div class="input-container">
+            <div class="input-container" id="first-container">
               <input
                 type="text"
                 name="first"
@@ -57,7 +57,8 @@
                 class="form-input"
               />
               <div
-                class="flex justify-center items-center px-4 text-myRed invisible" id="exclamation-first"
+                class="flex justify-center items-center px-4 text-myRed invisible"
+                id="exclamation-first"
               >
                 <i class="fas fa-exclamation-circle fa-lg"></i>
               </div>
@@ -65,7 +66,7 @@
             <label for="first" id="error-first" class="label-format invisible"
               >First name cannot be empty</label
             >
-            <div class="input-container">
+            <div class="input-container" id="last-container">
               <input
                 type="text"
                 name="last"
@@ -75,7 +76,8 @@
                 class="form-input"
               />
               <div
-                class="flex justify-center items-center px-4 text-myRed invisible" id="exclamation-last"
+                class="flex justify-center items-center px-4 text-myRed invisible"
+                id="exclamation-last"
               >
                 <i class="fas fa-exclamation-circle fa-lg"></i>
               </div>
@@ -83,7 +85,7 @@
             <label for="last" id="error-last" class="label-format invisible"
               >Last name cannot be empty</label
             >
-            <div class="input-container">
+            <div class="input-container" id="email-container">
               <input
                 type="email"
                 name="email"
@@ -93,7 +95,8 @@
                 class="form-input"
               />
               <div
-                class="flex justify-center items-center px-4 text-myRed invisible" id="exclamation-email"
+                class="flex justify-center items-center px-4 text-myRed invisible"
+                id="exclamation-email"
               >
                 <i class="fas fa-exclamation-circle fa-lg"></i>
               </div>
@@ -101,7 +104,7 @@
             <label for="email" id="error-email" class="label-format invisible"
               >Looks like this is not an email</label
             >
-            <div class="input-container">
+            <div class="input-container" id="password-container">
               <input
                 type="password"
                 name="password"
@@ -111,12 +114,16 @@
                 class="form-input"
               />
               <div
-                class="flex justify-center items-center px-4 text-myRed invisible" id="exclamation-password"
+                class="flex justify-center items-center px-4 text-myRed invisible"
+                id="exclamation-password"
               >
                 <i class="fas fa-exclamation-circle fa-lg"></i>
               </div>
             </div>
-            <label for="password" id="error-password" class="label-format invisible"
+            <label
+              for="password"
+              id="error-password"
+              class="label-format invisible"
               >Password cannot be empty</label
             >
 
