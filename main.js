@@ -26,18 +26,22 @@ button.addEventListener("click", (e) => {
 firstNameContainer.addEventListener("keyup", (e) => {
   firstNameContainer.style.borderColor = "hsl(248, 32%, 49%)";
   exclamationFirstName.style.visibility = "hidden";
+  errorFirstName.style.visibility = "hidden";
 });
 lastNameContainer.addEventListener("keyup", (e) => {
   lastNameContainer.style.borderColor = "hsl(248, 32%, 49%)";
   exclamationLastName.style.visibility = "hidden";
+  errorLastName.style.visibility = "hidden";
 });
 emailContainer.addEventListener("keyup", (e) => {
   emailContainer.style.borderColor = "hsl(248, 32%, 49%)";
   exclamationMail.style.visibility = "hidden";
+  errorMail.style.visibility = "hidden";
 });
 passwordContainer.addEventListener("keyup", (e) => {
   passwordContainer.style.borderColor = "hsl(248, 32%, 49%)";
   exclamationPassword.style.visibility = "hidden";
+  errorPassword.style.visibility = "hidden";
 });
 
 function validateFields() {
