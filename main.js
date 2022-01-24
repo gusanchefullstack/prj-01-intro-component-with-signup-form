@@ -34,9 +34,12 @@ lastNameContainer.addEventListener("keyup", (e) => {
   errorLastName.style.visibility = "hidden";
 });
 emailContainer.addEventListener("keyup", (e) => {
-  emailContainer.style.borderColor = "hsl(248, 32%, 49%)";
-  exclamationMail.style.visibility = "hidden";
-  errorMail.style.visibility = "hidden";
+  if (emailRegex.test(emailInput.value)) {
+    emailInput.style.color = "rgb(114,107,128)";
+    emailContainer.style.borderColor = "hsl(248, 32%, 49%)";
+    exclamationMail.style.visibility = "hidden";
+    errorMail.style.visibility = "hidden";
+  }
 });
 passwordContainer.addEventListener("keyup", (e) => {
   passwordContainer.style.borderColor = "hsl(248, 32%, 49%)";
