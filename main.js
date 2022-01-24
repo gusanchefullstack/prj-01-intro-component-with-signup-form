@@ -28,37 +28,37 @@ function validateFields() {
   if (!firstInput.value) {
     exclamationFirstName.classList.replace("invisible", "visible");
     errorFirstName.classList.replace("invisible", "visible");
-    firstNameContainer.classList.add("border-red-500");
+    firstNameContainer.classList.replace("border-gray-300", "border-red-500");
   } else {
     exclamationFirstName.classList.replace("visible", "invisible");
     errorFirstName.classList.replace("visible", "invisible");
-    firstNameContainer.classList.remove("border-red-500");
+    firstNameContainer.classList.replace("border-red-500", "border-gray-300");
   }
   if (!lastInput.value) {
     exclamationLastName.classList.replace("invisible", "visible");
     errorLastName.classList.replace("invisible", "visible");
-    lastNameContainer.classList.add("border-red-500");
+    lastNameContainer.classList.replace("border-gray-300", "border-red-500");
   } else {
     exclamationLastName.classList.replace("visible", "invisible");
     errorLastName.classList.replace("visible", "invisible");
-    lastNameContainer.classList.remove("border-red-500");
+    lastNameContainer.classList.replace("border-red-500", "border-gray-300");
   }
   if (!emailInput.value || !emailRegex.test(emailInput.value)) {
     exclamationMail.classList.replace("invisible", "visible");
     errorMail.classList.replace("invisible", "visible");
-    emailContainer.classList.add("border-red-500");
+    emailContainer.classList.replace("border-gray-300", "border-red-500");
   } else {
     exclamationMail.classList.replace("visible", "invisible");
     errorMail.classList.replace("visible", "invisible");
-    emailContainer.classList.remove("border-red-500");
+    emailContainer.classList.replace("border-red-500", "border-gray-300");
   }
   if (!passwordInput.value) {
     exclamationPassword.classList.replace("invisible", "visible");
     errorPassword.classList.replace("invisible", "visible");
-    passwordContainer.classList.add("border-red-500");
+    passwordContainer.classList.replace("border-gray-300", "border-red-500");
   } else {
     exclamationPassword.classList.replace("visible", "invisible");
     errorPassword.classList.replace("visible", "invisible");
-    passwordContainer.classList.remove("border-red-500");
+    passwordContainer.classList.replace("border-red-500", "border-gray-300");
   }
 }
