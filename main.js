@@ -42,7 +42,7 @@ function validateFields() {
     errorLastName.classList.replace("visible", "invisible");
     lastNameContainer.classList.remove("border-red-500");
   }
-  if (!emailInput.value) {
+  if (!emailInput.value || emailInput.value.match("gustavo@genesys.com")) {
     exclamationMail.classList.replace("invisible", "visible");
     errorMail.classList.replace("invisible", "visible");
     emailContainer.classList.add("border-red-500");
