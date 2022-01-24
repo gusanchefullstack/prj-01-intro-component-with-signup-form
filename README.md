@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentor.io](https://your-solution-url.com)
+- Solution URL: [FrontendMentor.io](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-with-javascript-dom-manipulation-K5T6qv-RR)
 - Live Site URL: [Vercel](https://prj-01-intro-component-with-signup-form.vercel.app/)
 
 ## My process
@@ -71,7 +71,8 @@ How to validate data once submit button is pressed
 button.addEventListener("click", (e) => {
   e.preventDefault();
   validateFields();     //call the function
-});```
+});
+```
 
 ### Continued development
 
