@@ -1,5 +1,6 @@
 import "./style.css";
 
+const emailRegex = /^\D.*@\D*\w*\.\w*/;
 const button = document.getElementById("form-submit-button");
 const firstInput = document.getElementById("first");
 const lastInput = document.getElementById("last");
@@ -42,7 +43,7 @@ function validateFields() {
     errorLastName.classList.replace("visible", "invisible");
     lastNameContainer.classList.remove("border-red-500");
   }
-  if (!emailInput.value || emailInput.value.match("gustavo@genesys.com")) {
+  if (!emailInput.value || !emailRegex.test(emailInput.value)) {
     exclamationMail.classList.replace("invisible", "visible");
     errorMail.classList.replace("invisible", "visible");
     emailContainer.classList.add("border-red-500");
