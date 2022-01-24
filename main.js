@@ -23,42 +23,60 @@ button.addEventListener("click", (e) => {
   e.preventDefault();
   validateFields();
 });
+firstNameContainer.addEventListener("keyup", (e) => {
+  firstNameContainer.style.borderColor = "hsl(248, 32%, 49%)";
+  exclamationFirstName.style.visibility = "hidden";
+});
+lastNameContainer.addEventListener("keyup", (e) => {
+  lastNameContainer.style.borderColor = "hsl(248, 32%, 49%)";
+  exclamationLastName.style.visibility = "hidden";
+});
+emailContainer.addEventListener("keyup", (e) => {
+  emailContainer.style.borderColor = "hsl(248, 32%, 49%)";
+  exclamationMail.style.visibility = "hidden";
+});
+passwordContainer.addEventListener("keyup", (e) => {
+  passwordContainer.style.borderColor = "hsl(248, 32%, 49%)";
+  exclamationPassword.style.visibility = "hidden";
+});
 
 function validateFields() {
   if (!firstInput.value) {
     exclamationFirstName.classList.replace("invisible", "visible");
     errorFirstName.classList.replace("invisible", "visible");
-    firstNameContainer.classList.replace("border-gray-300", "border-red-500");
+    firstNameContainer.style.borderColor = "hsl(0, 100%, 74%)";
   } else {
     exclamationFirstName.classList.replace("visible", "invisible");
     errorFirstName.classList.replace("visible", "invisible");
-    firstNameContainer.classList.replace("border-red-500", "border-gray-300");
+    firstNameContainer.style.borderColor = "inherit";
   }
   if (!lastInput.value) {
     exclamationLastName.classList.replace("invisible", "visible");
     errorLastName.classList.replace("invisible", "visible");
-    lastNameContainer.classList.replace("border-gray-300", "border-red-500");
+    lastNameContainer.style.borderColor = "hsl(0, 100%, 74%)";
   } else {
     exclamationLastName.classList.replace("visible", "invisible");
     errorLastName.classList.replace("visible", "invisible");
-    lastNameContainer.classList.replace("border-red-500", "border-gray-300");
+    lastNameContainer.style.borderColor = "inherit";
   }
   if (!emailInput.value || !emailRegex.test(emailInput.value)) {
     exclamationMail.classList.replace("invisible", "visible");
     errorMail.classList.replace("invisible", "visible");
-    emailContainer.classList.replace("border-gray-300", "border-red-500");
+    emailContainer.style.borderColor = "hsl(0, 100%, 74%)";
+    emailInput.style.color = "hsl(0, 100%, 74%)";
   } else {
     exclamationMail.classList.replace("visible", "invisible");
     errorMail.classList.replace("visible", "invisible");
-    emailContainer.classList.replace("border-red-500", "border-gray-300");
+    emailContainer.style.borderColor = "inherit";
+    emailInput.style.color = "inherit";
   }
   if (!passwordInput.value) {
     exclamationPassword.classList.replace("invisible", "visible");
     errorPassword.classList.replace("invisible", "visible");
-    passwordContainer.classList.replace("border-gray-300", "border-red-500");
+    passwordContainer.style.borderColor = "hsl(0, 100%, 74%)";
   } else {
     exclamationPassword.classList.replace("visible", "invisible");
     errorPassword.classList.replace("visible", "invisible");
-    passwordContainer.classList.replace("border-red-500", "border-gray-300");
+    passwordContainer.style.borderColor = "inherit";
   }
 }
